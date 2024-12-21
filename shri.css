@@ -1,0 +1,174 @@
+
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    background-color: #CC0B0B0F;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-size: 16px;
+}
+
+.logo {
+    font-family: "Hepta Slab", serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* Responsive gallery cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info .name {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-info .role {
+    font-size: 0.9rem;
+    color: #7c7c7c;
+}
+
+.feedback {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    border-left: 1.5px solid gray;
+    padding-left: 12px;
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav a {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .cards-container {
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .cards-container {
+        gap: 10px;
+    }
+
+    .card {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .feedback {
+        font-size: 1rem;
+        padding-left: 8px;
+    }
+}
+
+
+button {
+    background-color: red;
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
